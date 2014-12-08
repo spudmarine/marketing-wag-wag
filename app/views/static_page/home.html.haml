@@ -30,7 +30,32 @@
           = image_tag "pic.svg", width: "40px"
         .small-10.columns{style: "padding: 0px;"}
           %h5{style: "font-family: 'mergelight'; color: #666666;"} Say cheese! We'll send you a pic or video of your happy pup after every walk. We may even post it to Instagram.
--# 
+%div
+  .row
+    .small-12.columns
+      = form_for (@user) do |f|
+        .row
+          .small-12.medium-4.columns
+            %h4 User Information
+          .small-12.medium-8.columns
+            .field
+              = f.label :email, "Email Address"
+              = f.text_field :email
+            %h6
+            .field.m-top-20
+              = f.label :first_name, "Enter First Name"
+              = f.text_field :first_name
+            .field.m-top-20
+              = f.label :last_name, "Enter Last Name"
+              = f.text_field :last_name
+            .field
+              = f.label :zip_code, "Enter Zip Code"
+              = f.text_field :zip_code
+            .small-8.medium-2.columns
+              .actions
+                %button.btn.btn-block.btn-l.btn-filled.ta-center Save
+
+-#
   %div{style: "padding: 120px 0px;"}
     .row
       .small-12.columns
