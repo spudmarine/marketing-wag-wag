@@ -1,5 +1,7 @@
 MarketingWagWag::Application.routes.draw do
 
+  resources :users
+
   root to: 'static_page#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

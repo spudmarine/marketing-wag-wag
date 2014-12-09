@@ -1,0 +1,23 @@
+class User < ActiveRecord::Base
+	after_create do
+    subscribe_to_mailchimp
+	end
+
+	def subscribe_to_mailchimp
+	  @mailchimp_list_id = "63cae63078"
+	  @gb = Gibbon::API.new
+	  
+	    @gb.lists.subscribe({
+	    :id => @mailchimp_list_id,
+	    :email => {:email => self.email},
+	    :merge_vars => {
+	      :first_name => self.last_name,
+	      :last_name => self.first_name,
+	      :zip_code => self.zip_code
+	    },
+	    :double_optin => false,
+	    :send_welcome => false
+	  })
+	  
+	end
+end
