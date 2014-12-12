@@ -51,32 +51,45 @@
           = image_tag "pic.svg", width: "40px"
         .small-10.columns{style: "padding: 0px;"}
           %h5{style: "font-family: 'mergelight'; color: #666666;"} Say cheese! We'll send you a pic or video of your happy pup after every walk. We may even post it to Instagram.
-%div{style: "background-color: #f0f0f0; padding: 130px 0px;"}
+%div{style: "padding: 30px 0px;"}
+  .row
+    .small-12.columns
+      %hr{style: "position: relative; top: 80px; margin: 0px;"}
+      .row
+        .small-8.small-offset-2.columns
+          %div{style: "background-color: white; padding: 30px; text-align: center;"}
+            %h4{style: "font-family: 'mergelight'; color: #666666;"} Sign up now to be included in our pre-launch special. We will be offering walks at discounted rate of $8 each for a limited number of new clients during our initial launch phase.
 -# 
-%div
+%div{style: "background-color: white; padding: 30px; margin-left: auto; margin-right: auto"}
   .row
     .small-12.columns
       = form_for (@user) do |f|
         .row
-          .small-12.medium-4.columns
-            %h4 User Information
-          .small-12.medium-8.columns
-            .field
-              = f.label :email, "Email Address"
-              = f.text_field :email
-            %h6
-            .field.m-top-20
-              = f.label :first_name, "Enter First Name"
-              = f.text_field :first_name
-            .field.m-top-20
-              = f.label :last_name, "Enter Last Name"
-              = f.text_field :last_name
-            .field
-              = f.label :zip_code, "Enter Zip Code"
-              = f.text_field :zip_code
-            .small-8.medium-2.columns
-              .actions
-                %button.btn.btn-block.btn-l.btn-filled.ta-center Save
+          .small-12.medium-12.columns
+            %h4{style: "font-family: 'mergelight'; color: #666666; text-align: center; margin-left: auto; margin-right: auto"} Sign Up Now!!
+        .row
+          .small-12.medium-12.columns
+            %h4{style: "font-family: 'mergelight'; font-size: medium; color: #666666; text-align: center; margin-left: auto; margin-right: auto"} We'll be in contact shortly to chat about your pets needs
+        .small-12.medium-12.columns{style: "font-family: 'mergelight'; color: #666666"}
+          .field
+            = f.label :email, "Email Address"
+            = f.text_field :email
+          %h6
+          .field.m-top-20
+            = f.label :first_name, "Enter First Name"
+            = f.text_field :first_name
+          .field.m-top-20
+            = f.label :last_name, "Enter Last Name"
+            = f.text_field :last_name
+          .field
+            = f.label :zip_code, "Enter Zip Code"
+            = f.text_field :zip_code
+          .small-12.medium-12.columns
+            .actions
+              %button.btn.btn-block.btn-l.btn-filled.ta-center{style: "font-family: 'mergelight'; color: white;"} Sign up!
+        .row
+          .small-12.medium-12.columns
+            %h4{style: "font-family: 'mergelight'; font-size: small;  color: #666666; margin-left: auto; margin-right: auto"} *We won't sell or use your information for anything besides contacting you for your pets needs and special offers
 
 -#
   %div{style: "padding: 120px 0px;"}
