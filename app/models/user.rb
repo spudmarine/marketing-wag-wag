@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
 	      :phone => self.phone
 	    },
 	    :double_optin => false,
-	    :send_welcome => false
+	    :send_welcome => true
 	  })
 	  
 	end
