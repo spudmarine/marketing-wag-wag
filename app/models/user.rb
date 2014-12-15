@@ -13,8 +13,8 @@ class User < ActiveRecord::Base
 	    :id => @mailchimp_list_id,
 	    :email => {:email => self.email},
 	    :merge_vars => {
-	      :first_name => self.last_name,
-	      :last_name => self.first_name,
+	      :first_name => self.first_name,
+	      :last_name => self.last_name,
 	      :zip_code => self.zip_code,
 	      :phone => self.phone
 	    },
