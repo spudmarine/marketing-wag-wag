@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	validates_uniqueness_of :email
+	validates_presence_of :email, :first_name, :zip_code
 
 	after_create do
     subscribe_to_mailchimp

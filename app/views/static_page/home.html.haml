@@ -9,6 +9,16 @@
           %button.primary Sign Up
 %div{style: "padding: 80px 0px;"}
   .row
+    - if @user.errors.any?
+      .small-12.columns
+        .error_explanation
+          %h5
+            = pluralize(@user.errors.count, "error")
+            prohibited signup:
+          %ul
+            - @user.errors.full_messages.each do |msg|
+              %li= msg
+  .row
     .small-12.columns
       %hr{style: "position: relative; top: 80px; margin: 0px;"}
       .row
