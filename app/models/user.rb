@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+	validates_uniqueness_of :email
+
 	after_create do
     subscribe_to_mailchimp
 	end
@@ -13,7 +15,8 @@ class User < ActiveRecord::Base
 	    :merge_vars => {
 	      :first_name => self.last_name,
 	      :last_name => self.first_name,
-	      :zip_code => self.zip_code
+	      :zip_code => self.zip_code,
+	      :phone => self.phone
 	    },
 	    :double_optin => false,
 	    :send_welcome => false
