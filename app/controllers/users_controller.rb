@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to root_path, notice: 'Thanks for signing up!' }
+        format.html { redirect_to root_path, notice: "Thanks for signing up! We'll be in contact with you soon." }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render "static_page/home"}

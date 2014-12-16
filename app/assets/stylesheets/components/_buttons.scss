@@ -1,3 +1,7 @@
+button {
+  @include transition (all 0.1s ease-in-out);
+}
+
 button.primary {
   background-color: $orange;
   color: white;
@@ -8,9 +12,18 @@ button.primary {
   text-transform: uppercase;
   border-radius: 100%;
   border: 10px solid white;
-  @include transition (all 0.1s ease-in-out);
   &:hover, &:active, &:focus {
     background-color: darken($orange, 5);
+  }
+}
 
+button.secondary {
+  background-color: $orange;
+  color: white;
+  font-family: 'mergelight';
+  font-size: 18px;
+  text-transform: uppercase;
+  &:hover, &:active, &:focus {
+    background-color: darken($orange, 5);
   }
 }
