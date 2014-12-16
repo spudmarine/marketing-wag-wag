@@ -1,23 +1,24 @@
-%div{style: "background-size: cover; background-repeat: no-repeat; background-image: url('http://picjumbo.com/wp-content/uploads/IMG_8321-1300x866.jpg');"}
+- if @user.errors.any?
+  %div{style: "background-color: #ff0000; color: #ffffff;"}
+    .row{style: "padding: 15px 0px;"}
+      .small-12.columns
+        .error_explanation
+          %p Please resolve the following:
+          %ul
+            - @user.errors.full_messages.each do |msg|
+              %li= msg
+%div{style: "background-size: cover; background-repeat: no-repeat; background-image: url('http://picjumbo.com/wp-content/uploads/IMG_8321-1300x866.jpg'); background-position: 50%;"}
   .overlay{style: "background-color: rgba(62,70,81,0.65);"}
     = render 'layouts/nav'
     .row
       .small-12.columns{style: "padding: 80px 0px 0px 0px; text-align: center;"}
         %h1{style: "font-size: 80px; color: white; font-family: 'mergelight';"} Who's a good dog?
-        %h4{style: "1111111color: white; font-family: 'Source Sans Pro'; color: #f0f0f0;"} Treat your best friend to premium dog walks.
+        %h4{style: "1111111color: white; font-family: 'Source Sans Pro'; color: #f0f0f0;"} Treat your best friend to Chicago's premium dog walking service.
         %div{style: "position: relative; top: 70px;"}
-          %button.primary Sign Up
+          -# SUPER DIRTY: Must Clean Up Later
+          %a{href: "#signup"}
+            %button.primary Sign Up
 %div{style: "padding: 80px 0px;"}
-  .row
-    - if @user.errors.any?
-      .small-12.columns
-        .error_explanation
-          %h5
-            = pluralize(@user.errors.count, "error")
-            prohibited signup:
-          %ul
-            - @user.errors.full_messages.each do |msg|
-              %li= msg
   .row
     .small-12.columns
       %hr{style: "position: relative; top: 80px; margin: 0px;"}
@@ -35,44 +36,28 @@
     .small-12.medium-4.columns
       = image_tag "pic.svg", width: "70px"
       %h5{style: "font-family: 'Source Sans Pro'; color: #666666; margin-top: 20px;"} Say cheese! We'll send you a pic or video of your happy pup after every walk. We may even post it to Instagram.
-%div{style: "padding: 30px 0px;"}
+%div#signup{style: "padding: 80px 0px; background-color: #3E4651"}
   .row
-    .small-12.columns
-      %hr{style: "position: relative; top: 80px; margin: 0px;"}
-      .row
-        .small-8.small-offset-2.columns
-          %div{style: "background-color: white; padding: 30px; text-align: center;"}
-            %h4{style: "font-family: 'mergelight'; color: #666666;"} Sign up now to be included in our pre-launch special. We will be offering walks at discounted rate of $8 each for a limited number of new clients during our initial launch phase.
-%div{style: "background-color: white; padding: 30px; margin-left: auto; margin-right: auto"}
-  .row
-    .small-12.columns
+    .small-12.medium-6.columns
+      %h2{style: "font-family: 'mergelight'; color: #ffffff;"} Sign up now to be included in our pre-launch special. 
+      %h2{style: "font-family: 'mergelight'; color: #ffffff; margin-top: 30px;"} We'll be offering walks at discounted rate of <span style="color: #F16233">$8 each</span> for a limited number of new clients during our initial launch phase.
+    .small-12.medium-5.columns
       = form_for (@user) do |f|
-        .row
-          .small-12.medium-12.columns
-            %h4{style: "font-family: 'mergelight'; color: #666666; text-align: center; margin-left: auto; margin-right: auto"} Sign Up Now!!
-        .row
-          .small-12.medium-12.columns
-            %h4{style: "font-family: 'mergelight'; font-size: medium; color: #666666; text-align: center; margin-left: auto; margin-right: auto"} We'll be in contact shortly to chat about your pets needs
-        .small-12.medium-12.columns{style: "font-family: 'mergelight'; color: #666666"}
-          .field
-            = f.label :email, "Email Address"
-            = f.text_field :email
-          %h6
-          .field.m-top-20
-            = f.label :first_name, "Enter First Name"
-            = f.text_field :first_name
-          .field.m-top-20
-            = f.label :last_name, "Enter Last Name"
-            = f.text_field :last_name
-          .field
-            = f.label :zip_code, "Enter Zip Code"
-            = f.text_field :zip_code
-          .field
-            = f.label :phone, "Enter Phone Number"
-            = f.telephone_field :phone
-          .small-12.medium-12.columns
-            .actions
-              %button.btn.btn-block.btn-l.btn-filled.ta-center{style: "font-family: 'mergelight'; color: white;"} Sign up!
-        .row
-          .small-12.medium-12.columns
-            %h4{style: "font-family: 'mergelight'; font-size: small;  color: #666666; margin-left: auto; margin-right: auto"} *We won't sell or use your information for anything besides contacting you for your pets needs and special offers
+        .field{style: "font-family: 'mergelight';"}
+          = f.label :email, "Email Address", style: "color: #ffffff;"
+          = f.text_field :email
+        .field.m-top-20{style: "font-family: 'mergelight';"}
+          = f.label :first_name, "First Name", style: "color: #ffffff;"
+          = f.text_field :first_name
+        .field.m-top-20{style: "font-family: 'mergelight';"}
+          = f.label :last_name, "Last Name", style: "color: #ffffff;"
+          = f.text_field :last_name
+        .field{style: "font-family: 'mergelight';"}
+          = f.label :zip_code, "Zip Code", style: "color: #ffffff;"
+          = f.text_field :zip_code
+        .field{style: "font-family: 'mergelight';"}
+          = f.label :phone, "Phone Number", style: "color: #ffffff;"
+          = f.telephone_field :phone
+        %p{style: "font-family: 'mergelight'; font-size: small;  color: #ffffff; margin-top: 10px; margin-bottom: 20px;"} We promise not to sell or use your info for anything besides business purposes and special Wag Wag offers.
+        .actions
+          %button.secondary Sign up
