@@ -13,7 +13,7 @@
     .row
       .small-12.columns{style: "padding: 80px 0px 0px 0px; text-align: center;"}
         %h1{style: "font-size: 80px; color: white; font-family: 'mergelight';"} Who's a good dog?
-        %h4{style: "1111111color: white; font-family: 'Source Sans Pro'; color: #f0f0f0;"} Treat your best friend to Chicago's premium dog walking service.
+        %h4{style: "color: white;"} Treat your best friend to Chicago's premium dog walking service.
         %div{style: "position: relative; top: 70px;"}
           -# SUPER DIRTY: Must Clean Up Later
           %a{href: "#signup"}
@@ -25,17 +25,17 @@
       .row
         .small-8.small-offset-2.columns
           %div{style: "background-color: white; padding: 30px; text-align: center;"}
-            %h4{style: "font-family: 'mergelight'; color: #666666;"} Walks are more than just a chance for your dog to do their business. Wag Wag gives dogs the fun time they crave while you’re away, with the convenience you would expect from a modern service.
+            %h4 Walks are more than just a chance for your dog to do their business. WagWag gives dogs the fun time they crave while you’re away, with the convenience you would expect from a modern service.
   .row{style: "text-align: center; margin-top: 40px;"}
     .small-12.medium-4.columns
       = image_tag "gps.svg", width: "70px"
-      %h5{style: "font-family: 'Source Sans Pro'; color: #666666; margin-top: 20px;"} We enable a GPS locatable collar on all dogs we walk. This helps keep your best friend safe and gives you peace of mind.
+      %h5{style: "margin-top: 20px;"} We enable a GPS locatable collar on all dogs we walk. This helps keep your best friend safe and gives you peace of mind.
     .small-12.medium-4.columns
       = image_tag "list.svg", width: "70px"
-      %h5{style: "font-family: 'Source Sans Pro'; color: #666666; margin-top: 20px;"} We'll send you a list of your pet's activities to keep you informed. Want us to look out for something? Let us know!
+      %h5{style: "margin-top: 20px;"} We'll send you a list of your pet's activities to keep you informed. Want us to look out for something? Let us know!
     .small-12.medium-4.columns
       = image_tag "pic.svg", width: "70px"
-      %h5{style: "font-family: 'Source Sans Pro'; color: #666666; margin-top: 20px;"} Say cheese! We'll send you a pic or video of your happy pup after every walk. We may even post it to Instagram.
+      %h5{style: " margin-top: 20px;"} Say cheese! We'll send you a pic or video of your happy pup after every walk. We may even post it to Instagram.
 %div#signup{style: "padding: 80px 0px; background-color: #3E4651"}
   .row
     .small-12.medium-6.columns
@@ -43,21 +43,21 @@
       %h2{style: "font-family: 'mergelight'; color: #ffffff; margin-top: 30px;"} We'll be offering walks at discounted rate of <span style="color: #F16233">$8 each</span> for a limited number of new clients during our initial launch phase.
     .small-12.medium-5.columns
       = form_for (@user) do |f|
-        .field{style: "font-family: 'mergelight';"}
+        .field
           = f.label :email, "Email Address", style: "color: #ffffff;"
           = f.text_field :email
-        .field.m-top-20{style: "font-family: 'mergelight';"}
+        .field.m-top-20
           = f.label :first_name, "First Name", style: "color: #ffffff;"
           = f.text_field :first_name
-        .field.m-top-20{style: "font-family: 'mergelight';"}
+        .field.m-top-20
           = f.label :last_name, "Last Name", style: "color: #ffffff;"
           = f.text_field :last_name
-        .field{style: "font-family: 'mergelight';"}
+        .field
           = f.label :zip_code, "Zip Code", style: "color: #ffffff;"
           = f.text_field :zip_code
-        .field{style: "font-family: 'mergelight';"}
+        .field
           = f.label :phone, "Phone Number", style: "color: #ffffff;"
           = f.telephone_field :phone
-        %p{style: "font-family: 'mergelight'; font-size: small;  color: #ffffff; margin-top: 10px; margin-bottom: 20px;"} We promise not to sell or use your info for anything besides business purposes and special Wag Wag offers.
+        %p{style: "font-size: small;  color: #ffffff; margin-top: 10px; margin-bottom: 20px;"} We promise not to sell or use your info for anything besides business purposes and special Wag Wag offers.
         .actions
           %button.secondary Sign up

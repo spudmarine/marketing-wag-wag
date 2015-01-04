@@ -16,12 +16,7 @@
 //= require turbolinks
 //= require fastclick
 //= require foundation.min
-//= require foundation.equalizer
-//= require foundation.magellan
-//= require foundation.clearing
-//= require foundation.offcanvas
 //= require foundation.reveal
 //= require jquery.cookie
 //= require placeholder
-//= require reveal
 //= require_tree .

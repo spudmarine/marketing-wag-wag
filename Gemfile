@@ -6,6 +6,7 @@ gem 'jquery-ui-rails'
 
 # CSS gems
 gem 'bourbon'
+gem 'bitters'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'

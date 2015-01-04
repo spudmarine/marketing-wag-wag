@@ -5,3 +5,11 @@
 .d-inline       { display: inline; }
 .d-inline-block { display: inline-block; }
 .d-block        { display: block; }
+
+.tt-uppercase { text-transform: uppercase; }
+
+.legal {
+  h1, h2, h3, h4, h5, h6, p, ul, ol {
+    font-family: 'Georgia', serif;
+  }
+}
