@@ -1,8 +1,12 @@
 MarketingWagWag::Application.routes.draw do
 
-  resources :users
 
   root to: 'static_page#home'
+
+  get '/users', :to => redirect("/")
+  get '/users/:all', :to => redirect("/")
+
+  resources :users, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
