@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 	end
 
 	def subscribe_to_mailchimp
-	  @mailchimp_list_id = "63cae63078"
+	  @mailchimp_list_id = "9f04f2d6df"
 	  @gb = Gibbon::API.new
 	  
 	    @gb.lists.subscribe({
