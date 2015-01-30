@@ -28,27 +28,43 @@
             %h4 Walks are more than just a chance for your dog to do their business. WagWag gives dogs the fun time they crave while you’re away, with the convenience you would expect from a modern service.
   .row{style: "text-align: center; margin-top: 40px;"}
     .small-12.medium-4.columns
-      = image_tag "gps.svg", width: "70px"
+      = image_tag "gps_collar.svg", width: "230px"
       %h5{style: "margin-top: 20px;"} We enable a GPS locatable collar on all dogs we walk. This helps keep your best friend safe and gives you peace of mind.
     .small-12.medium-4.columns
-      = image_tag "list.svg", width: "70px"
+      = image_tag "note_card.svg", width: "230px"
       %h5{style: "margin-top: 20px;"} We'll send you a list of your pet's activities to keep you informed. Want us to look out for something? Let us know!
     .small-12.medium-4.columns
-      = image_tag "pic.svg", width: "70px"
-      %h5{style: " margin-top: 20px;"} Say cheese! We'll send you a pic or video of your happy pup after every walk. We may even post it to Instagram.
+      = image_tag "credit_card.svg", width: "230px"
+      %h5{style: " margin-top: 20px;"} No need for cash - you can easily pay by credit card. Just follow the link in your weekly invoice.
 %div#signup{style: "padding: 80px 0px; background-color: #F0F0F0"}
   .row
-    .small-12.medium-5.columns
-      = image_tag "wagwag_thank_you.svg"
-    .small-12.medium-6.medium-offset-1.columns
-      %h3.m-top-10 We've filled all of our spots for our launch group and walks have commenced! 
-      %h3.m-top-10 Over the next couple of weeks we'll be refining our offerings and will begin regular walks at the <span style="color: #F16233">end of January</span>.
-  .row
-    .small-12.medium-8.medium-offset-2.columns
-      %hr.m-y-80
-  .row
+    .small-12.medium-3.columns
+      .div.p-y-20{style: "width: 100%; background-color: white; border: 1px solid #979797; border-radius: 10px; text-align: center;"}
+        %h3.c-drk-blue As Needed
+        %p{style: "font-size: 0.8rem;"} 30 min walks
+        %hr.m-y-15
+        %h1.c-drk-blue{style: "font-size: 4rem;"} $20
+    .small-12.medium-3.columns
+      .div.p-y-20{style: "width: 100%; background-color: white; border: 1px solid #979797; border-radius: 10px; text-align: center;"}
+        %h3.c-drk-blue 1 - 2
+        %p{style: "font-size: 0.8rem;"} 30 min walks/week
+        %hr.m-y-15
+        %h1.c-drk-blue{style: "font-size: 4rem;"} $18
+    .small-12.medium-3.columns
+      .div.p-y-20{style: "width: 100%; background-color: white; border: 1px solid #979797; border-radius: 10px; text-align: center;"}
+        %h3.c-drk-blue 3 - 4
+        %p{style: "font-size: 0.8rem;"} 30 min walks/week
+        %hr.m-y-15
+        %h1.c-drk-blue{style: "font-size: 4rem;"} $16
+    .small-12.medium-3.columns
+      .div.p-y-20{style: "width: 100%; background-color: white; border: 1px solid #979797; border-radius: 10px; text-align: center;"}
+        %h3.c-drk-blue 5 +
+        %p{style: "font-size: 0.8rem;"} 30 min walks/week
+        %hr.m-y-15
+        %h1.c-drk-blue{style: "font-size: 4rem;"} $14
+  .row.m-top-80
     .small-12.medium-6.medium-offset-3.columns
-      %h4.m-bottom-30 Sign up now to be first on the list!
+      %h1.m-bottom-30.c-orange.ta-center Sign Up Now
       = form_for (@user) do |f|
         .field
           = f.label :email, "Email Address"
