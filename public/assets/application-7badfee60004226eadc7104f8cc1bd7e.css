@@ -1,0 +1,4442 @@
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
+/* line 10, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 46, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 58, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 68, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 79, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 90, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 99, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 119, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 163, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 222, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 233, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 257, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 267, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 279, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 304, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 313, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 323, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 336, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 348, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 372, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 380, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 391, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 400, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 409, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 420, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 426, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/normalize.css */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-version {
+  font-family: "/5.5.0/";
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-small {
+  font-family: "/only screen/";
+  width: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-small-only {
+  font-family: "/only screen and (max-width: 40em)/";
+  width: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-medium-only {
+  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
+  width: 40.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-large-only {
+  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
+  width: 64.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-xlarge-only {
+  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
+  width: 90.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+meta.foundation-data-attribute-namespace {
+  font-family: false;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+html, body {
+  height: 100%;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+html, body {
+  font-size: 100%;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+#map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object {
+  max-width: none !important;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.left {
+  float: left !important;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.right {
+  float: right !important;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+select {
+  width: 100%;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row:after {
+  clear: both;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row.collapse > .column, .row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row.collapse .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row .row {
+  width: auto;
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row .row:before, .row .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row .row:after {
+  clear: both;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row .row.collapse {
+  width: auto;
+  margin: 0;
+  max-width: none;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row .row.collapse:before, .row .row.collapse:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.row .row.collapse:after {
+  clear: both;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.column, .columns {
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+[class*="column"] + [class*="column"].end {
+  float: left;
+}
+
+@media only screen {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column, .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-1 {
+    width: 8.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-2 {
+    width: 16.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-3 {
+    width: 25%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-4 {
+    width: 33.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-5 {
+    width: 41.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-6 {
+    width: 50%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-7 {
+    width: 58.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-8 {
+    width: 66.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-9 {
+    width: 75%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-10 {
+    width: 83.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-11 {
+    width: 91.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-12 {
+    width: 100%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-0 {
+    margin-left: 0% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-1 {
+    margin-left: 8.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-2 {
+    margin-left: 16.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-3 {
+    margin-left: 25% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-4 {
+    margin-left: 33.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-5 {
+    margin-left: 41.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-6 {
+    margin-left: 50% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-7 {
+    margin-left: 58.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-8 {
+    margin-left: 66.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-9 {
+    margin-left: 75% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-10 {
+    margin-left: 83.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-offset-11 {
+    margin-left: 91.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.small-centered, .columns.small-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.small-uncentered, .columns.small-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.small-centered:last-child, .columns.small-centered:last-child {
+    float: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.small-uncentered:last-child, .columns.small-uncentered:last-child {
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.small-uncentered.opposite, .columns.small-uncentered.opposite {
+    float: right;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.small-collapse > .column, .row.small-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.small-collapse .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.small-uncollapse > .column, .row.small-uncollapse > .columns {
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column, .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-1 {
+    width: 8.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-2 {
+    width: 16.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-3 {
+    width: 25%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-4 {
+    width: 33.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-5 {
+    width: 41.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-6 {
+    width: 50%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-7 {
+    width: 58.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-8 {
+    width: 66.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-9 {
+    width: 75%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-10 {
+    width: 83.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-11 {
+    width: 91.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-12 {
+    width: 100%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-0 {
+    margin-left: 0% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-1 {
+    margin-left: 8.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-2 {
+    margin-left: 16.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-3 {
+    margin-left: 25% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-4 {
+    margin-left: 33.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-5 {
+    margin-left: 41.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-6 {
+    margin-left: 50% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-7 {
+    margin-left: 58.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-8 {
+    margin-left: 66.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-9 {
+    margin-left: 75% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-10 {
+    margin-left: 83.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-offset-11 {
+    margin-left: 91.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.medium-centered, .columns.medium-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.medium-uncentered, .columns.medium-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.medium-centered:last-child, .columns.medium-centered:last-child {
+    float: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.medium-uncentered:last-child, .columns.medium-uncentered:last-child {
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.medium-uncentered.opposite, .columns.medium-uncentered.opposite {
+    float: right;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.medium-collapse > .column, .row.medium-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.medium-collapse .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.medium-uncollapse > .column, .row.medium-uncollapse > .columns {
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column, .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-1 {
+    width: 8.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-2 {
+    width: 16.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-3 {
+    width: 25%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-4 {
+    width: 33.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-5 {
+    width: 41.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-6 {
+    width: 50%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-7 {
+    width: 58.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-8 {
+    width: 66.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-9 {
+    width: 75%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-10 {
+    width: 83.33333%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-11 {
+    width: 91.66667%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-12 {
+    width: 100%;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-0 {
+    margin-left: 0% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-1 {
+    margin-left: 8.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-2 {
+    margin-left: 16.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-3 {
+    margin-left: 25% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-4 {
+    margin-left: 33.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-5 {
+    margin-left: 41.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-6 {
+    margin-left: 50% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-7 {
+    margin-left: 58.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-8 {
+    margin-left: 66.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-9 {
+    margin-left: 75% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-10 {
+    margin-left: 83.33333% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-offset-11 {
+    margin-left: 91.66667% !important;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.large-centered, .columns.large-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.large-uncentered, .columns.large-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.large-centered:last-child, .columns.large-centered:last-child {
+    float: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.large-uncentered:last-child, .columns.large-uncentered:last-child {
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .column.large-uncentered.opposite, .columns.large-uncentered.opposite {
+    float: right;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.large-collapse > .column, .row.large-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.large-collapse .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .row.large-uncollapse > .column, .row.large-uncollapse > .columns {
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+}
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1004;
+  display: none;
+  left: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal, dialog {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  z-index: 1005;
+  width: 100vw;
+  top: 0;
+  border-radius: 3px;
+  left: 0;
+  background-color: #fff;
+  padding: 1.25rem;
+  border: solid 1px #666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 1.875rem;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal, dialog {
+    min-height: 100vh;
+  }
+}
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal .column, dialog .column, .reveal-modal .columns, dialog .columns {
+  min-width: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal > :first-child, dialog > :first-child {
+  margin-top: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal > :last-child, dialog > :last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal, dialog {
+    width: 80%;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal, dialog {
+    top: 6.25rem;
+  }
+}
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal.radius, dialog.radius {
+  border-radius: 3px;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal.round, dialog.round {
+  border-radius: 1000px;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal.collapse, dialog.collapse {
+  padding: 0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal.tiny, dialog.tiny {
+    width: 30%;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal.small, dialog.small {
+    width: 40%;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal.medium, dialog.medium {
+    width: 60%;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal.large, dialog.large {
+    width: 70%;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal.xlarge, dialog.xlarge {
+    width: 95%;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal.full, dialog.full {
+  top: 0;
+  left: 0;
+  height: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-width: none !important;
+  margin-left: 0 !important;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .reveal-modal.full, dialog.full {
+    width: 100vw;
+    max-width: 62.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+.reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
+  font-size: 2.5rem;
+  line-height: 1;
+  position: absolute;
+  top: 0.625rem;
+  right: 1.375rem;
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+dialog {
+  display: none;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+dialog::backdrop, dialog + .backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: auto;
+  display: none;
+  left: 0;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+dialog[open] {
+  display: block;
+}
+
+@media print {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  dialog, .reveal-modal, dialog {
+    display: none;
+    background: #fff !important;
+  }
+}
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+[class*="block-grid-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+[class*="block-grid-"]:before, [class*="block-grid-"]:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+[class*="block-grid-"]:after {
+  clear: both;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+[class*="block-grid-"] > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+
+@media only screen {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-1 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-3 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-4 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-6 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-7 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-8 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-9 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-10 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-11 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-12 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .small-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-1 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-3 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-4 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-6 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-7 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-8 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-9 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-10 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-11 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-12 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .medium-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-1 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-3 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-4 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-6 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-7 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-8 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-9 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-10 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-11 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-12 > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/foundation.min.css */
+  .large-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+}
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #f16233;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+/* line 13, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/extends/_button.scss */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #ca3c0e;
+  color: white;
+}
+/* line 18, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/extends/_button.scss */
+button:disabled,
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #666666;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 15, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 23, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 27, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 31, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+  font-weight: 300;
+}
+
+/* line 52, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #f16233;
+  text-decoration: none;
+}
+/* line 57, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+a:hover {
+  color: #ca3c0e;
+}
+/* line 61, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+a:active, a:focus {
+  color: #ca3c0e;
+  outline: none;
+}
+
+/* line 67, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 76, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 81, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #8c8c8c;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 88, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+cite {
+  color: #a6a6a6;
+  font-style: italic;
+}
+/* line 92, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_typography.scss */
+cite:before {
+  content: "\2014 \00A0";
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em;
+}
+
+/* line 10, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em;
+}
+/* line 20, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 24, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 31, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+/* line 44, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: #f16233;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(239, 80, 27, 0.7);
+  outline: none;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 64, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 69, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 74, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0;
+}
+
+/* line 22, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 2, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 7, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_lists.scss */
+ul.default-ul,
+ol.default-ul {
+  list-style-type: disc;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+/* line 13, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_lists.scss */
+ul.default-ol,
+ol.default-ol {
+  list-style-type: decimal;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 23, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 28, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 2, /Users/Jenny/code/marketing-wag-wag/vendor/assets/stylesheets/bitters/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: 'mergelight';
+  src: url("merge_light-webfont.eot");
+  src: url("merge_light-webfont.eot?#iefix") format("embedded-opentype"), url("merge_light-webfont.woff2") format("woff2"), url("merge_light-webfont.woff") format("woff"), url("merge_light-webfont.ttf") format("truetype"), url("merge_light-webfont.svg#mergelight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 3, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.bgc-orange {
+  background-color: #f16233;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.bgc-turq {
+  background-color: #00b5b5;
+}
+
+/* line 5, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.bgc-lt-gray {
+  background-color: #f0f0f0;
+}
+
+/* line 6, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.bgc-blue {
+  background-color: #5c6d7e;
+}
+
+/* line 7, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.bgc-drk-blue {
+  background-color: #3e4651;
+}
+
+/* line 11, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.c-orange {
+  color: #f16233;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.c-turq {
+  color: #00b5b5;
+}
+
+/* line 13, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.c-lt-gray {
+  color: #f0f0f0;
+}
+
+/* line 14, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.c-blue {
+  color: #5c6d7e;
+}
+
+/* line 15, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.c-drk-blue {
+  color: #3e4651;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_colors.scss */
+.c-white {
+  color: white;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-0 {
+  padding: 0px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-0 {
+  padding-top: 0px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 0px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-0 {
+  padding-bottom: 0px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-0 {
+  padding-left: 0px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-0 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-0 {
+  margin: 0px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-0 {
+  margin-top: 0px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-0 {
+  margin-right: 0px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-0 {
+  margin-bottom: 0px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-0 {
+  margin-left: 0px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-0 {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-5 {
+  padding: 5px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-5 {
+  padding-top: 5px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 5px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-5 {
+  padding-bottom: 5px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-5 {
+  padding-left: 5px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-5 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-5 {
+  margin: 5px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-5 {
+  margin-top: 5px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-5 {
+  margin-right: 5px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-5 {
+  margin-bottom: 5px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-5 {
+  margin-left: 5px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-5 {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-10 {
+  padding: 10px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-10 {
+  padding-top: 10px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 10px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-10 {
+  padding-bottom: 10px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-10 {
+  padding-left: 10px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-10 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-10 {
+  margin: 10px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-10 {
+  margin-top: 10px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-10 {
+  margin-right: 10px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-10 {
+  margin-bottom: 10px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-10 {
+  margin-left: 10px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-10 {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-15 {
+  padding: 15px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-15 {
+  padding-top: 15px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 15px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-15 {
+  padding-bottom: 15px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-15 {
+  padding-left: 15px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-15 {
+  margin: 15px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-15 {
+  margin-top: 15px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-15 {
+  margin-right: 15px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-15 {
+  margin-bottom: 15px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-15 {
+  margin-left: 15px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-15 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-20 {
+  padding: 20px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-20 {
+  padding-top: 20px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 20px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-20 {
+  padding-bottom: 20px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-20 {
+  padding-left: 20px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-20 {
+  margin: 20px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-20 {
+  margin-top: 20px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-20 {
+  margin-right: 20px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-20 {
+  margin-bottom: 20px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-20 {
+  margin-left: 20px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-20 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-25 {
+  padding: 25px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-25 {
+  padding-top: 25px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 25px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-25 {
+  padding-bottom: 25px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-25 {
+  padding-left: 25px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-25 {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-25 {
+  margin: 25px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-25 {
+  margin-top: 25px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-25 {
+  margin-right: 25px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-25 {
+  margin-bottom: 25px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-25 {
+  margin-left: 25px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-25 {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-30 {
+  padding: 30px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-30 {
+  padding-top: 30px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 30px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-30 {
+  padding-bottom: 30px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-30 {
+  padding-left: 30px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-30 {
+  margin: 30px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-30 {
+  margin-top: 30px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-30 {
+  margin-right: 30px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-30 {
+  margin-bottom: 30px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-30 {
+  margin-left: 30px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-30 {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-40 {
+  padding: 40px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-40 {
+  padding-top: 40px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 40px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-40 {
+  padding-bottom: 40px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-40 {
+  padding-left: 40px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-40 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-40 {
+  margin: 40px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-40 {
+  margin-top: 40px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-40 {
+  margin-right: 40px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-40 {
+  margin-bottom: 40px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-40 {
+  margin-left: 40px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-40 {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-50 {
+  padding: 50px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-50 {
+  padding-top: 50px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 50px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-50 {
+  padding-bottom: 50px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-50 {
+  padding-left: 50px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-50 {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-50 {
+  margin: 50px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-50 {
+  margin-top: 50px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-50 {
+  margin-right: 50px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-50 {
+  margin-bottom: 50px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-50 {
+  margin-left: 50px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-50 {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-60 {
+  padding: 60px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-60 {
+  padding-top: 60px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 60px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-60 {
+  padding-bottom: 60px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-60 {
+  padding-left: 60px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-60 {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-60 {
+  margin: 60px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-60 {
+  margin-top: 60px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-60 {
+  margin-right: 60px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-60 {
+  margin-bottom: 60px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-60 {
+  margin-left: 60px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-60 {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-70 {
+  padding: 70px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-70 {
+  padding-top: 70px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 70px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-70 {
+  padding-bottom: 70px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-70 {
+  padding-left: 70px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-70 {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-70 {
+  margin: 70px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-70 {
+  margin-top: 70px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-70 {
+  margin-right: 70px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-70 {
+  margin-bottom: 70px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-70 {
+  margin-left: 70px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-70 {
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-80 {
+  padding: 80px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-80 {
+  padding-top: 80px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 80px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-80 {
+  padding-bottom: 80px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-80 {
+  padding-left: 80px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-80 {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-80 {
+  margin: 80px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-80 {
+  margin-top: 80px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-80 {
+  margin-right: 80px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-80 {
+  margin-bottom: 80px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-80 {
+  margin-left: 80px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-80 {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-90 {
+  padding: 90px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-90 {
+  padding-top: 90px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 90px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-90 {
+  padding-bottom: 90px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-90 {
+  padding-left: 90px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-90 {
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-90 {
+  margin: 90px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-90 {
+  margin-top: 90px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-90 {
+  margin-right: 90px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-90 {
+  margin-bottom: 90px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-90 {
+  margin-left: 90px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-90 {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-90 {
+  margin-right: 90px;
+  margin-left: 90px;
+}
+
+/* line 4, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-100 {
+  padding: 100px;
+}
+
+/* line 8, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-top-100 {
+  padding-top: 100px;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-right-val {
+  padding-right: 100px;
+}
+
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-bottom-100 {
+  padding-bottom: 100px;
+}
+
+/* line 20, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-left-100 {
+  padding-left: 100px;
+}
+
+/* line 24, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-y-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 29, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.p-x-100 {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+/* line 35, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-100 {
+  margin: 100px;
+}
+
+/* line 39, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-top-100 {
+  margin-top: 100px;
+}
+
+/* line 43, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-right-100 {
+  margin-right: 100px;
+}
+
+/* line 47, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-bottom-100 {
+  margin-bottom: 100px;
+}
+
+/* line 51, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-left-100 {
+  margin-left: 100px;
+}
+
+/* line 55, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-y-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* line 60, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.m-x-100 {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* line 67, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_boxmodel.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.ta-center {
+  text-align: center;
+}
+
+/* line 2, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.ta-right {
+  text-align: right;
+}
+
+/* line 3, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.ta-left {
+  text-align: left;
+}
+
+/* line 5, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.d-inline {
+  display: inline;
+}
+
+/* line 6, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.d-inline-block {
+  display: inline-block;
+}
+
+/* line 7, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.d-block {
+  display: block;
+}
+
+/* line 9, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 12, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.legal h1, .legal h2, .legal h3, .legal h4, .legal h5, .legal h6, .legal p, .legal ul, .legal ol {
+  font-family: 'Georgia', serif;
+}
+
+/* line 17, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_typography.scss */
+.merge {
+  font-family: 'merge-light';
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_buttons.scss */
+a, button {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+/* line 6, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_buttons.scss */
+button.primary,
+a.primary {
+  background-color: #f16233;
+  color: white;
+  font-family: 'mergelight';
+  height: 140px;
+  width: 140px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 100%;
+  border: 10px solid white;
+}
+/* line 16, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_buttons.scss */
+button.primary:hover, button.primary:active, button.primary:focus,
+a.primary:hover,
+a.primary:active,
+a.primary:focus {
+  background-color: #ef501b;
+}
+
+/* line 22, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_buttons.scss */
+button.secondary,
+a.secondary {
+  padding: 20px 70px;
+  background-color: #f16233;
+  color: white;
+  font-family: 'mergelight';
+  font-size: 18px;
+}
+/* line 28, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/components/_buttons.scss */
+button.secondary:hover, button.secondary:active, button.secondary:focus,
+a.secondary:hover,
+a.secondary:active,
+a.secondary:focus {
+  background-color: #ef501b;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/modules/_reveal.scss */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* line 1, /Users/Jenny/code/marketing-wag-wag/app/assets/stylesheets/modules/_walker.scss */
+.walker-bg {
+  background-image: url(/assets/wagwag.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
