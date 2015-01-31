@@ -1,42 +1,9 @@
-- if @user.errors.any?
-  %div{style: "background-color: #ff0000; color: #ffffff;"}
-    .row{style: "padding: 15px 0px;"}
-      .small-12.columns
-        .error_explanation
-          %p Please resolve the following:
-          %ul
-            - @user.errors.full_messages.each do |msg|
-              %li= msg
-%div{style: "background-size: cover; background-repeat: no-repeat; background-image: url('http://picjumbo.com/wp-content/uploads/IMG_8321-1300x866.jpg'); background-position: 50%;"}
-  .overlay{style: "background-color: rgba(62,70,81,0.65);"}
-    = render 'layouts/nav'
-    .row
-      .small-12.columns{style: "padding: 80px 0px 0px 0px; text-align: center;"}
-        %h1{style: "font-size: 80px; color: white; font-family: 'mergelight';"} Who's a good dog?
-        %h4{style: "color: white;"} Treat your best friend to Chicago's premium dog walking service.
-        %div{style: "position: relative; top: 70px;"}
-          -# SUPER DIRTY: Must Clean Up Later
-          %a{href: "#signup"}
-            %button.primary Sign Up
-%div{style: "padding: 80px 0px;"}
-  .row
-    .small-12.columns
-      %hr{style: "position: relative; top: 80px; margin: 0px;"}
-      .row
-        .small-8.small-offset-2.columns
-          %div{style: "background-color: white; padding: 30px; text-align: center;"}
-            %h4 Walks are more than just a chance for your dog to do their business. WagWag gives dogs the fun time they crave while you’re away, with the convenience you would expect from a modern service.
-  .row{style: "text-align: center; margin-top: 40px;"}
-    .small-12.medium-4.columns
-      = image_tag "gps_collar.svg", width: "230px"
-      %h5{style: "margin-top: 20px;"} We enable a GPS locatable collar on all dogs we walk. This helps keep your best friend safe and gives you peace of mind.
-    .small-12.medium-4.columns
-      = image_tag "note_card.svg", width: "230px"
-      %h5{style: "margin-top: 20px;"} We'll send you a list of your pet's activities to keep you informed. Want us to look out for something? Let us know!
-    .small-12.medium-4.columns
-      = image_tag "credit_card.svg", width: "230px"
-      %h5{style: " margin-top: 20px;"} No need for cash - you can easily pay by credit card. Just follow the link in your weekly invoice.
-%div#signup{style: "padding: 80px 0px; background-color: #F0F0F0"}
+= render 'layouts/error_msg'
+= render 'hero'
+= render 'about'
+= render 'features'
+= render 'meet_walker'
+%div#pricing{style: "padding: 80px 0px; background-color: #F0F0F0"}
   .row
     .small-12.medium-3.columns
       .div.p-y-20{style: "width: 100%; background-color: white; border: 1px solid #979797; border-radius: 10px; text-align: center;"}
@@ -62,7 +29,7 @@
         %p{style: "font-size: 0.8rem;"} 30 min walks/week
         %hr.m-y-15
         %h1.c-drk-blue{style: "font-size: 4rem;"} $14
-  .row.m-top-80
+  .row.m-top-80#signup
     .small-12.medium-6.medium-offset-3.columns
       %h1.m-bottom-30.c-orange.ta-center Sign Up Now
       = form_for (@user) do |f|

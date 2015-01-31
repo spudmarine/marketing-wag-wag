@@ -20,11 +20,11 @@ a.primary {
 
 button.secondary,
 a.secondary {
+  padding: 20px 70px;
   background-color: $orange;
   color: white;
   font-family: 'mergelight';
   font-size: 18px;
-  text-transform: uppercase;
   &:hover, &:active, &:focus {
     background-color: darken($orange, 5);
   }
