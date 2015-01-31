@@ -1,0 +1,9 @@
+- if @user.errors.any?
+  %div{style: "background-color: #ff0000; color: #ffffff;"}
+    .row{style: "padding: 15px 0px;"}
+      .small-12.columns
+        .error_explanation
+          %p Please resolve the following:
+          %ul
+            - @user.errors.full_messages.each do |msg|
+              %li= msg
