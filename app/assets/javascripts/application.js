@@ -19,4 +19,5 @@
 //= require foundation.reveal
 //= require jquery.cookie
 //= require placeholder
+//= require page_scroll
 //= require_tree .
