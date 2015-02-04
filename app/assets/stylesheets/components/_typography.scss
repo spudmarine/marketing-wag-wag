@@ -7,11 +7,24 @@
 .d-block        { display: block; }
 
 .tt-uppercase { text-transform: uppercase; }
+.tt-lowercase { text-transform: lowercase; }
 
+// Font Family Classes
+.merge       { font-family: 'mergelight'; }
+.source-sans { font-family: 'Source Sans Pro'; }
+
+// Main Hero Font
+.hero-text {
+  font-size: 3.5rem;
+  font-family: 'mergelight';
+  line-height: 1;
+  color: $drk-blue;
+}
+
+// Legal Jargon Font
 .legal {
   h1, h2, h3, h4, h5, h6, p, ul, ol {
     font-family: 'Georgia', serif;
   }
 }
 
-.merge { font-family: 'mergelight'; }
