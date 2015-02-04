@@ -17,6 +17,7 @@
 //= require fastclick
 //= require foundation.min
 //= require foundation.reveal
+//= require foundation.equalizer
 //= require jquery.cookie
 //= require placeholder
 //= require page_scroll
